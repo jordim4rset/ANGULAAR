@@ -1,0 +1,8 @@
+
+<input type="text" [(ngModel)]="searchText" placeholder="BuscarEvento">
+
+<div>
+  @for (event of events | titleFilter: searchText; track event.id) {
+    <p>{{event.title}}</p>
+  }
+</div>

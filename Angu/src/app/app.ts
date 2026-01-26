@@ -8,6 +8,7 @@ import { ProductList } from './product-list/product-list';
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
+
 export class App {
   protected readonly title = signal('product-list');
 }

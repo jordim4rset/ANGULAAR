@@ -1,0 +1,17 @@
+<form>
+  <label for="search">Filtrar:</label>
+  <input type="text" [(ngModel)]="searchText" name="search">
+  <p>Buscando: {{searchText}}</p>
+</form>
+
+
+<form>
+  <label for="name">Nombre: </label>
+  <input type="text" name="name" [(ngModel)] = "user.name">
+  <br>
+  <label for="email">Email: </label>
+  <input type="text" name="email" [(ngModel)] = "user.email">
+</form>
+
+<p>Nombre: {{user.name}}</p>
+<p>Email: {{user.email}}</p>
