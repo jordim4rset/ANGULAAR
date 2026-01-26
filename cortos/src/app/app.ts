@@ -7,13 +7,16 @@ import { SearchBox } from './search-box/search-box';
 import { PriceView } from './price-view/price-view';
 import { EventList } from './event-list/event-list';
 import { LifecycleTest } from './lifecycle-test/lifecycle-test';
+import { NoticeList } from './notice-list/notice-list';
+import { IncidentList } from './incident-list/incident-list';
 
 @Component({
   selector: 'app-root',
-  imports: [LifecycleTest, UserProfile, TextStyle, StatusRow, HoverButton, SearchBox, PriceView, EventList],
+  imports: [IncidentList ,NoticeList ,LifecycleTest, UserProfile, TextStyle, StatusRow, HoverButton, SearchBox, PriceView, EventList],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
+
 export class App {
   protected readonly title = signal('user-profile');
 }

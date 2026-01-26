@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { TitleFilterPipe } from '../pipes/title-filter-pipe';
 import { FormsModule } from '@angular/forms';
+
 @Component({
   selector: 'app-event-list',
-  imports: [TitleFilterPipe, FormsModule],
+  imports: [FormsModule],
   templateUrl: './event-list.html',
   styleUrl: './event-list.css',
 })
