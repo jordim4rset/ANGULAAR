@@ -7,7 +7,9 @@
     </tr>
   </thead>
   <tbody>
-    <tr app-incident-item></tr>
-    <tr app-incident-item></tr>
+    @for (incident of incidents; track incident.id) {
+      <!-- AÑADIMOS LA FUNCIÓN MODIFICAR QUE ES EL OUTPUT DE ITEM Y AÑADIMOS LOS PARAMETROS NECESARIOS -->
+      <tr app-incident-item [incidencia]="incident" (modificarStatus)="incident.status = $event"></tr>
+    }
   </tbody>
 </table>

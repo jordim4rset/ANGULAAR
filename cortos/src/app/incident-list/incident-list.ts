@@ -23,5 +23,5 @@ export class IncidentList {
       desc: 'No se puede ver',
       status: 'Pendiente'
     }
-  ]
+  ];
 }
