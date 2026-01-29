@@ -13,7 +13,7 @@ export class IncidentItem {
 
   @Input() incidencia: any;
 
-  //GUARDAMOS EL STADO NUEVO
+  //GUARDAMOS EL ESTADO NUEVO
   auxStatus = 'funcionando';
 
   //DECIMOS QUE VAMOS A MANDAR UN EVENTO LLAMADO MODIFICARSTATUS
