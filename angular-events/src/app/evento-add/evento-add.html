@@ -1,0 +1,23 @@
+<form (ngSubmit)="enviarFormulario()" class="mt-4 card p-3 bg-light">
+  <div class="mb-3">
+    <label class="form-label">Nombre</label>
+    <input type="text" class="form-control" name="title" [(ngModel)]="newEvent.title">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Fecha</label>
+    <input type="date" class="form-control" name="date" [(ngModel)]="newEvent.date">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Descripción</label>
+    <textarea class="form-control" name="description" [(ngModel)]="newEvent.description"></textarea>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Precio</label>
+    <input type="number" class="form-control" name="price" [(ngModel)]="newEvent.price">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Imagen</label>
+    <input type="file" class="form-control" #filemage (change)="changeImage(filemage)">
+  </div>
+  <button type="submit" class="btn btn-primary">CREAR</button>
+</form>

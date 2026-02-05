@@ -1,0 +1,28 @@
+{
+  "products":  [
+    {
+      "id": 1,
+      "desc": "WD BLACK SN770 2TB NVMe SSD",
+      "avail": "2023-10-03",
+      "price": 115,
+      "imageUrl": "ssd.jpg",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "desc": "MSI MPG B550 GAMING PLUS ",
+      "avail": "2023-09-15",
+      "price": 139.9,
+      "imageUrl": "motherboard.jpg",
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "desc": "Kingston FURY Beast DDR4 3200 MHz 16GB 2x8GB CL16",
+      "avail": "2023-11-10",
+      "price": 42.95,
+      "imageUrl": "ram.jpg",
+      "rating": 3
+    }
+  ]
+}
